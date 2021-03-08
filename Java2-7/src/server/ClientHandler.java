@@ -49,7 +49,7 @@ public class ClientHandler {
                         }
                         // приватное сообщение
                         else if (str.startsWith("/w")) {
-                            String[] privateReceiverAndMsg = str.split("\\s");
+                            String[] privateReceiverAndMsg = str.split("\\s", 3);
                             String receiver = privateReceiverAndMsg[1];
                             String msg = privateReceiverAndMsg[2];
                             server.privateMsg(this, receiver, msg);

@@ -27,7 +27,7 @@ public class Box <T> {
         }
 
         public boolean compare (Box<?> box) {
-            return this.equals(box);
+            return (this.getWeight() == box.getWeight());
         }
 
         public void moveFruits (Box<T> box) {
